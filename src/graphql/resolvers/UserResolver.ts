@@ -4,10 +4,10 @@ import { User } from '../models/User';
 @Resolver()
 export class UserResolver {
   @Query((returns) => User)
-  getUser() {
+  getUseById() {
     return {
       id: 1,
-      name: 'John Doe',
+      username: 'John Doe',
       displayName: 'John the gamer',
     };
   }
