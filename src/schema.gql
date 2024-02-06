@@ -9,5 +9,6 @@ type User {
 }
 
 type Query {
-  getUseById: User!
+  getUseById(id: Int!): User
+  getUsers: [User!]!
 }
